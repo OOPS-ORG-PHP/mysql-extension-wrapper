@@ -16,23 +16,23 @@ BSD 2-clause
 
 # old code
 $con = mysql_connect();
-if ( ! is_resource($con) )
-    dir ("connect failed\n");
+if ( ! is_resource($con) ) {
+    die ("connect failed\n");
+}
 
 # wrapper code
 $con = mysql_connect();
-if ( ! is_myresource($con) )
+if ( ! is_myresource($con) ) {
     die ("connect filed\n");
+}
 ?>
 ```
 
 ## Example
 ```php
 <?php
-
-if ( ! extension_loaded('mysql') ) {
-	require_once 'mysql-wrapper.php';
-}
+# even if loaded mysql extension, well done.
+require_once 'mysql-wrapper.php';
 
 $con = @mysql_connect ('localhost', 'user', 'pass');
 if ( ! is_myresource ($con) ) {
