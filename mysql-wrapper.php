@@ -1011,7 +1011,7 @@ function mysqli_mysqli_fetch_field_direct ($result, $offset) {
 	return $r;
 }
 // }}}
-	
+
 // {{{ +-- (mysqli_object) mysql_global_resource (&$c)
 function mysql_global_resource (&$c, $argc, $noerr = false) {
 	if ( $argc < 0 ) {
