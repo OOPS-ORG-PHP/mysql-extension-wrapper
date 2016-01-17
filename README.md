@@ -2,6 +2,7 @@ Wrapper for PHP mysql extension
 ===============================
 
 The mysql-wrapper api support mysql extension api, and was designed to work best as with mysql extension.
+If you have PHP7 environment and must need mysql extension api, this is good choise.
 
 
 ## License
@@ -10,20 +11,20 @@ BSD 2-clause
 ## Requirements
 
 1. This wrapper api requires mysqli extension over PHP 4
-2. check with is_resource() about mysql lind and mysql result, replace is_myresource() api. For example:
+2. check with ***is_resource()*** about mysql lind and mysql result, replace ***is_myresource()*** api. For example:
   ```php
 <?php
 
 # old code
 $con = mysql_connect();
 if ( ! is_resource($con) ) {
-    die ("connect failed\n");
+	die ("connect failed\n");
 }
 
 # wrapper code
 $con = mysql_connect();
 if ( ! is_myresource($con) ) {
-    die ("connect filed\n");
+	die ("connect filed\n");
 }
 ?>
 ```
