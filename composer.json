@@ -1,0 +1,26 @@
+{
+	"name": "joungkyun/mysql-extention-wrapper",
+	"description": "PHP MySQL extension wrapper",
+	"type": "library",
+	"keyword": [
+		"mysql",
+		"mysqli"
+	],
+	"homepage": "https://github.com/OOPS-ORG-PHP/php-mysql-extention-wrapper",
+	"license": "BSD-2-Clause",
+	"author": [
+		{
+			"name": "JoungKyun Kim",
+			"email": "joungkyun@daum.net",
+			"homepage": "https://joungkyun.github.com",
+			"role": "Maintainer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/OOPS-ORG-PHP/php-mysql-extention-wrapper/issues"
+	},
+	"require": {
+		"php": ">=4.1.0",
+		"ext-mysqli": "*"
+	}
+}
