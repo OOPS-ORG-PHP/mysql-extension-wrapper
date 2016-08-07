@@ -11,7 +11,7 @@
  * Warning!
  *
  * 1. You must enable mysqli extension.
- * 2. PHP 4 <= PHP VERSION <= PHP7
+ * 2. PHP 4.1 <= PHP VERSION <= PHP7
  * 2. If you check return value by mysql_connect and mysql_result with is_resource(),
  *    you must change to is_myresource() from is_reosource().
  *

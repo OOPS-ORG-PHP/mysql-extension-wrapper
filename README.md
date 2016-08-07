@@ -11,7 +11,7 @@ BSD 2-clause
 
 ## Requirements
 
-1. This wrapper api requires mysqli extension over PHP 4
+1. This wrapper api requires mysqli extension on PHP 4.1 and after
 2. check with ***is_resource()*** about mysql link and mysql result, replace ***is_myresource()*** api. For example:
   ```php
 <?php
