@@ -13,21 +13,21 @@ BSD 2-clause
 
 1. This wrapper api requires mysqli extension on PHP 4.1 and after
 2. check with ***is_resource()*** about mysql link and mysql result, replace ***is_myresource()*** api. For example:
-  ```php
-<?php
+```php
+    <?php
 
-# old code
-$con = mysql_connect();
-if ( ! is_resource($con) ) {
-	die ("connect failed\n");
-}
+    # old code
+    $con = mysql_connect();
+    if ( ! is_resource($con) ) {
+        die ("connect failed\n");
+    }
 
-# wrapper code
-$con = mysql_connect();
-if ( ! is_myresource($con) ) {
-	die ("connect filed\n");
-}
-?>
+    # wrapper code
+    $con = mysql_connect();
+    if ( ! is_myresource($con) ) {
+        die ("connect filed\n");
+    }
+    ?>
 ```
 
 ## Example
