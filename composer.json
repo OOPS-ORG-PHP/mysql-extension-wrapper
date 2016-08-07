@@ -6,7 +6,7 @@
 		"mysql",
 		"mysqli"
 	],
-	"homepage": "https://github.com/OOPS-ORG-PHP/php-mysql-extension-wrapper",
+	"homepage": "https://github.com/OOPS-ORG-PHP/mysql-extension-wrapper",
 	"license": "BSD-2-Clause",
 	"author": [
 		{
@@ -17,7 +17,7 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/OOPS-ORG-PHP/php-mysql-extension-wrapper/issues"
+		"issues": "https://github.com/OOPS-ORG-PHP/mysql-extension-wrapper/issues"
 	},
 	"require": {
 		"php": ">=4.1.0",
