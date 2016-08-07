@@ -1,6 +1,7 @@
 {
 	"name": "joungkyun/mysql-extension-wrapper",
-	"description": "PHP MySQL extension wrapper",
+	"description": "pure PHP MySQL extension wrapper",
+	"version": "1.0.0",
 	"type": "library",
 	"keyword": [
 		"mysql",
@@ -23,4 +24,5 @@
 		"php": ">=4.1.0",
 		"ext-mysqli": "*"
 	}
+    "minimum-stability": "stable"
 }
