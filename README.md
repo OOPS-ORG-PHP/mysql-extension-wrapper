@@ -1,6 +1,6 @@
 Wrapper for PHP mysql extension
 ===============================
-[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg?style=plastic)](https://raw.githubusercontent.com/Joungkyun/mysql-extension-wrapper/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg?style=plastic)](https://raw.githubusercontent.com/OOPS-ORG-PHP/mysql-extension-wrapper/master/LICENSE)
 
 The mysql-wrapper api support mysql extension api, and was designed to work best as with mysql extension.
 If you have PHP7 environment and must need mysql extension api, this is good choise.
