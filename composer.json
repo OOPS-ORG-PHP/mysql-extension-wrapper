@@ -15,6 +15,9 @@
 	"support": {
 		"issues": "https://github.com/OOPS-ORG-PHP/mysql-extension-wrapper/issues"
 	},
+	"autoload": {
+            "files": ["mysql-wrapper.php"]
+        },
 	"require": {
 		"php": ">=4.1.0",
 		"ext-mysqli": "*"
