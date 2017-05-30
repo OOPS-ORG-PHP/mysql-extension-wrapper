@@ -62,5 +62,46 @@ mysql_close($con);
 ?>
 ```
 
+## Composer
+
+first, make composer.json as follow:
+```json
+{
+    "require": {
+        "joungkyun/mysql-extension-wrapper": "1.0.*"
+    }
+}
+```
+
+and, install ***mysql-extension-wrapper***
+
+```bash
+[user@host project]$ php composer.phpt install
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing joungkyun/mysql-extension-wrapper (1.0.1): Downloading (100%)
+Writing lock file
+Generating autoload files
+[user@host project]$
+```
+
+and, write code as follow:
+
+```php
+<?php
+require_once 'vendor/autoload.php';
+
+echo 'mysql_connect is supported ';
+if ( function_exists('mysql_connect') )
+    echo 'YES';
+else
+    echo 'NO';
+
+echo "\n";
+?>
+```
+
+
 ## Credits
 JoungKyun.Kim
