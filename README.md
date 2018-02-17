@@ -50,7 +50,7 @@ if ( ! is_myresource($result) ) {
 	trigger_error(sprintf('Query Error: %s', mysql_error()), E_USER_WARNING);
 }
 
-$rno = mysql_num_rows($con);
+$rno = mysql_num_rows($result);
 
 while ( ($row = mysql_fetch_object($result)) ) {
 	printf("User: %s, Host: %s\n", $row->user, $row->host);
