@@ -131,8 +131,7 @@ if ( ! function_exists ('mysql_connect') ) {
 
 
 
-    /**
-     * @deprecated 5.5
+    /**     
      * Get number of affected rows in previous MySQL operation
      * @link http://php.net/manual/en/function.mysql-affected-rows.php
      * @param resource $link_identifier [optional]
@@ -165,8 +164,7 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
 
-    /**
-     * @deprecated 5.5
+    /**     
      * Returns the name of the character set
      * @link http://php.net/manual/en/function.mysql-client-encoding.php
      * @param resource $link_identifier [optional]
@@ -180,8 +178,7 @@ if ( ! function_exists ('mysql_connect') ) {
         return mysqli_character_set_name ($c);
     }
 
-    /**
-     * @deprecated 5.5
+    /**     
      * Close MySQL connection
      * @link http://php.net/manual/en/function.mysql-close.php
      * @param resource $link_identifier [optional]
@@ -195,8 +192,7 @@ if ( ! function_exists ('mysql_connect') ) {
         return mysqli_close ($c);
     }
 
-    /**
-     * @deprecated 5.5
+    /**     
      * Open a connection to a MySQL Server
      * @link http://php.net/manual/en/function.mysql-connect.php
      * @param string $server [optional] <p>
@@ -315,7 +311,6 @@ if ( ! function_exists ('mysql_connect') ) {
 
 
     /**
-     * @deprecated 5.5
      * Move internal result pointer
      * @link http://php.net/manual/en/function.mysql-data-seek.php
      * @param resource $result
@@ -352,7 +347,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Retrieves database name from the call to <b>mysql_list_dbs</b>
      * @link http://php.net/manual/en/function.mysql-db-name.php
      * @param resource $result <p>
@@ -402,7 +396,7 @@ if ( ! function_exists ('mysql_connect') ) {
     /**
      * Selects a database and executes a query on it
      * @link http://php.net/manual/en/function.mysql-db-query.php
-     * @deprecated 5.3.0 Use mysql_select_db() and mysql_query() instead
+     
      * @param string $database <p>
      * The name of the database that will be selected.
      * </p>
@@ -454,7 +448,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Returns the numerical value of the error message from previous MySQL operation
      * @link http://php.net/manual/en/function.mysql-errno.php
      * @param resource $link_identifier [optional]
@@ -471,7 +464,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Returns the text of the error message from previous MySQL operation
      * @link http://php.net/manual/en/function.mysql-error.php
      * @param resource $link_identifier [optional]
@@ -499,7 +491,6 @@ if ( ! function_exists ('mysql_connect') ) {
         /**
          * Escapes a string for use in a mysql_query
          * @link http://php.net/manual/en/function.mysql-escape-string.php
-         * @deprecated 5.3.0 Use mysql_real_escape_string() instead
          * @param string $unescaped_string <p>
          * The string that is to be escaped.
          * </p>
@@ -514,7 +505,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Fetch a result row as an associative array, a numeric array, or both
      * @link http://php.net/manual/en/function.mysql-fetch-array.php
      * @param resource $result
@@ -563,7 +553,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Fetch a result row as an associative array
      * @link http://php.net/manual/en/function.mysql-fetch-assoc.php
      * @param resource $result
@@ -598,7 +587,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get column information from a result and return as an object
      * @link http://php.net/manual/en/function.mysql-fetch-field.php
      * @param resource $result
@@ -684,7 +672,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get the length of each output in a result
      * @link http://php.net/manual/en/function.mysql-fetch-lengths.php
      * @param resource $result
@@ -709,7 +696,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Fetch a result row as an object
      * @link http://php.net/manual/en/function.mysql-fetch-object.php
      * @param resource $result
@@ -774,7 +760,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get a result row as an enumerated array
      * @link http://php.net/manual/en/function.mysql-fetch-row.php
      * @param resource $result
@@ -807,7 +792,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get the flags associated with the specified field in a result
      * @link http://php.net/manual/en/function.mysql-field-flags.php
      * @param resource $result
@@ -900,7 +884,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Returns the length of the specified field
      * @link http://php.net/manual/en/function.mysql-field-len.php
      * @param resource $result
@@ -917,7 +900,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get the name of the specified field in a result
      * @link http://php.net/manual/en/function.mysql-field-name.php
      * @param resource $result
@@ -934,7 +916,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Set result pointer to a specified field offset
      * @link http://php.net/manual/en/function.mysql-field-seek.php
      * @param resource $result
@@ -978,7 +959,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get name of the table the specified field is in
      * @link http://php.net/manual/en/function.mysql-field-table.php
      * @param resource $result
@@ -995,7 +975,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get the type of the specified field in a result
      * @link http://php.net/manual/en/function.mysql-field-type.php
      * @param resource $result
@@ -1016,7 +995,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Free result memory
      * @link http://php.net/manual/en/function.mysql-free-result.php
      * @param resource $result
@@ -1048,7 +1026,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get MySQL client info
      * @link http://php.net/manual/en/function.mysql-get-client-info.php
      * @return string The MySQL client version.
@@ -1060,7 +1037,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get MySQL host info
      * @link http://php.net/manual/en/function.mysql-get-host-info.php
      * @param resource $link_identifier [optional]
@@ -1077,7 +1053,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get MySQL protocol info
      * @link http://php.net/manual/en/function.mysql-get-proto-info.php
      * @param resource $link_identifier [optional]
@@ -1093,7 +1068,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get MySQL server info
      * @link http://php.net/manual/en/function.mysql-get-server-info.php
      * @param resource $link_identifier [optional]
@@ -1109,7 +1083,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get information about the most recent query
      * @link http://php.net/manual/en/function.mysql-info.php
      * @param resource $link_identifier [optional]
@@ -1128,7 +1101,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get the ID generated in the last query
      * @link http://php.net/manual/en/function.mysql-insert-id.php
      * @param resource $link_identifier [optional]
@@ -1154,7 +1126,6 @@ if ( ! function_exists ('mysql_connect') ) {
      * failure. Use the <b>mysql_tablename</b> function to traverse
      * this result pointer, or any function for result tables, such as
      * <b>mysql_fetch_array</b>.
-     * @deprecated 5.4.0
      * @since 4.0
      * @since 5.0
      */
@@ -1166,7 +1137,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * List MySQL table fields
      * @link http://php.net/manual/en/function.mysql-list-fields.php
      * @param string $database_name <p>
@@ -1197,7 +1167,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * List MySQL processes
      * @link http://php.net/manual/en/function.mysql-list-processes.php
      * @param resource $link_identifier [optional]
@@ -1225,7 +1194,6 @@ if ( ! function_exists ('mysql_connect') ) {
      * Use the <b>mysql_tablename</b> function to
      * traverse this result pointer, or any function for result tables,
      * such as <b>mysql_fetch_array</b>.
-     * @deprecated 5.2.0
      * @since 4.0
      * @since 5.0
      */
@@ -1237,7 +1205,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get number of fields in result
      * @link http://php.net/manual/en/function.mysql-num-fields.php
      * @param resource $result
@@ -1268,7 +1235,6 @@ if ( ! function_exists ('mysql_connect') ) {
      * @return int <p>The number of rows in the result set on success or FALSE on failure. </p>
      * @since 4.0
      * @since 5.0
-     * @deprecated 5.5
      */
     function mysql_num_rows ($result) {
         if ( ! is_myresource ($result, true) ) {
@@ -1286,7 +1252,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Open a persistent connection to a MySQL server
      * @link http://php.net/manual/en/function.mysql-pconnect.php
      * @param string $server [optional] <p>
@@ -1325,7 +1290,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Ping a server connection or reconnect if there is no connection
      * @link http://php.net/manual/en/function.mysql-ping.php
      * @param resource $link_identifier [optional]
@@ -1342,7 +1306,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Send a MySQL query
      * @link http://php.net/manual/en/function.mysql-query.php
      * @param string $query <p>
@@ -1391,7 +1354,6 @@ if ( ! function_exists ('mysql_connect') ) {
 
     if(!function_exists('mysql_real_escape_string')) {
         /**
-         * @deprecated 5.5
          * Escapes special characters in a string for use in an SQL statement
          * @link http://php.net/manual/en/function.mysql-real-escape-string.php
          * @param string $unescaped_string <p>
@@ -1413,7 +1375,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get result data
      * @link http://php.net/manual/en/function.mysql-result.php
      * @param resource $result
@@ -1475,7 +1436,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Select a MySQL database
      * @link http://php.net/manual/en/function.mysql-select-db.php
      * @param string $database_name <p>
@@ -1493,7 +1453,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5 Use mysqli_set_charset instead.
      * Sets the client character set
      * @link http://php.net/manual/en/function.mysql-set-charset.php
      * @param string $charset <p>
@@ -1511,7 +1470,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get current system status
      * @link http://php.net/manual/en/function.mysql-stat.php
      * @param resource $link_identifier [optional]
@@ -1530,7 +1488,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Get table name of field
      * @link http://php.net/manual/en/function.mysql-tablename.php
      * @param resource $result <p>
@@ -1578,7 +1535,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Return the current thread ID
      * @link http://php.net/manual/en/function.mysql-thread-id.php
      * @param resource $link_identifier [optional]
@@ -1594,7 +1550,6 @@ if ( ! function_exists ('mysql_connect') ) {
     }
 
     /**
-     * @deprecated 5.5
      * Send an SQL query to MySQL without fetching and buffering the result rows.
      * @link http://php.net/manual/en/function.mysql-unbuffered-query.php
      * @param string $query <p>
