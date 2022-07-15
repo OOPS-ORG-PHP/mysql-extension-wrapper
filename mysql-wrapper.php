@@ -807,7 +807,7 @@ function mysql_num_rows ($result) {
 
 // {{{ +-- (mysqli_object) mysql_pconnect ($host = null, $user = null, $pass = null, $link = false, $flag = 0)
 function mysql_pconnect ($host = null, $user = null, $pass = null, $link = false, $flag = 0) {
-	return mysql_connect ('p:' . $host, $user, $pass, $link, $falg);
+	return mysql_connect ('p:' . $host, $user, $pass, $link, $flag);
 }
 // }}}
 
