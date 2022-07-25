@@ -750,9 +750,9 @@ if ( ! function_exists ('mysql_connect') ) {
                     );
                     return false;
                 }
-                $r = mysqli_fetch_object ($result, $calassname, $params);
+                $r = mysqli_fetch_object ($result, $classname, $params);
             } else
-                $r = mysqli_fetch_object ($result, $calassname);
+                $r = mysqli_fetch_object ($result, $classname);
         } else
             $r = mysqli_fetch_object ($result);
 
