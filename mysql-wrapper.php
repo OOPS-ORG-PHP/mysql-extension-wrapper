@@ -919,7 +919,7 @@ if ( ! function_exists ('mysql_connect') ) {
 	}
 	// }}}
 
-	// {{{ +-- public (int) mysql_field_len ($result, $offest)
+	// {{{ +-- public (int) mysql_field_len ($result, $offset)
 	/**
 	 * Returns the length of the specified field
 	 * @link http://php.net/manual/en/function.mysql-field-len.php
@@ -929,7 +929,7 @@ if ( ! function_exists ('mysql_connect') ) {
 	 * @since 4.0
 	 * @since 5.0
 	 */
-	function mysql_field_len ($result, $offest) {
+	function mysql_field_len ($result, $offset) {
 		if ( ($r = mysqli_mysqli_fetch_field_direct ($result, $offset)) === false )
 			return false;
 
